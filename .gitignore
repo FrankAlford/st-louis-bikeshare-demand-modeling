@@ -1,0 +1,28 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Large or restricted source data should be downloaded separately.
+data/raw/
+data/interim/
+outputs/
+cache_dir/
+
+# Geospatial sidecar lock/temp files
+*.lock
+*.qgz~
+
+# Credentials
+.env
+*.pem
+*.key

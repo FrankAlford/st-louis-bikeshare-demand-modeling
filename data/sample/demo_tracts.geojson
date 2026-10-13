@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "tract_id": "demo-west", "name": "Demo West" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -90.2, 38.6 ], [ -90.2, 38.7 ], [ -90.3, 38.7 ], [ -90.3, 38.6 ], [ -90.2, 38.6 ] ] ] } },
+{ "type": "Feature", "properties": { "tract_id": "demo-east", "name": "Demo East" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -90.1, 38.6 ], [ -90.1, 38.7 ], [ -90.2, 38.7 ], [ -90.2, 38.6 ], [ -90.1, 38.6 ] ] ] } }
+]
+}
