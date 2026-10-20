@@ -14,7 +14,7 @@ The key planning question is: **where does the model predict high bike-share dem
 
 - The demand model identifies high-predicted-demand tracts concentrated in St. Louis City and selected inner-ring county areas.
 - Scooter activity is spatially concentrated in a smaller set of city tracts. The notebook comparison reports a Pearson correlation of **0.682** between predicted bike-share z-scores and scooter traversal z-scores.
-- The largest positive bike-minus-scooter gaps in the checked notebook include tracts such as `29510112400`, `29510118600`, and `29510114300`. These should be treated as screening leads, not final station recommendations.
+- The largest positive bike-minus-scooter gaps in the checked notebook include tracts such as `29510112400`, `29510118600`, and `29510114300`. These should be treated as leads, not final station recommendations.
 - Scooter values are **segment traversal counts**, not counts of unique scooter trips.
 
 ## Methods
@@ -27,7 +27,7 @@ The working project assembled station-level bike-share ridership, Census/ACS dem
 - A stacked ensemble family using Elastic Net, Ridge Regression, Histogram-based Gradient Boosting, and Partial Least Squares components.
 - Nested leave-one-city-out validation to test generalization to unseen bike-share markets.
 
-The strongest verified model result in the accessible notebooks is from `notebooks/nested_loco_modeling_2010.ipynb`: **nested leave-one-city-out R² = 0.3605 ± 0.1128**. This was verified from notebook source comments, not from the missing final report PDF.
+The strongest verified model result in the accessible notebooks is from `notebooks/nested_loco_modeling_2010.ipynb`: **nested leave-one-city-out R² = 0.3605 ± 0.1128**. 
 
 ## GIS Workflow
 
@@ -102,7 +102,6 @@ Primary source data should be credited to the relevant bike-share system operato
 
 Known limitations:
 
-- `Tech Writing Final (5).pdf` was not available, so final README language has not been checked against the report.
 - The reported R² is documented as a cross-city validation result from notebook source comments, not as a training score.
 - Full reproduction requires external datasets and substantial compute.
 - Scooter segment traversal counts are not unique trip counts and should not be interpreted that way.
